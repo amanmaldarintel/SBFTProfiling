@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SBFT Profiling Study</title>
+<style>
+  :root { --bg:#0f172a; --panel:#1e293b; --accent:#38bdf8; --text:#e2e8f0; --muted:#94a3b8; --border:#334155; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; font-family:'Segoe UI',Roboto,Arial,sans-serif; background:var(--bg);
+    color:var(--text); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px; }
+  h1 { font-size:24px; margin:0 0 6px; }
+  p.sub { color:var(--muted); font-size:13px; margin:0 0 28px; }
+  .cards { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; max-width:820px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:22px 24px;
+    width:360px; text-decoration:none; color:var(--text); transition:border-color .15s, transform .15s; }
+  .card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  .card.disabled { opacity:.55; }
+  .card .t { font-size:16px; font-weight:600; margin-bottom:8px; }
+  .card .d { font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+  <h1>SBFT Profiling Study</h1>
+  <p class="sub">Source: <b>day5_current_full_PB0PCcZNC0909.txt</b></p>
+  <div class="cards">
+    <a class="card" href="day5_current_full_PB0PCcZNC0909_current_profiling_report.html"><div class="t">Current Profiling Dashboard</div><div class="d">Per-main-pattern VCCIN EHV0 current, segmented by experiment &amp; sweep.</div></a><a class="card" href="day5_current_full_PB0PCcZNC0909_thermal_report.html"><div class="t">Temperature Profiling Dashboard</div><div class="d">Per-DCM die temperature (DTS), heat-maps and per-pattern thermal columns.</div></a>
+  </div>
+</body>
+</html>
